@@ -70,6 +70,7 @@ Firecrawl (scraping), GitHub (repos), Context7 (docs), Fal.ai (imagen/video/audi
 ## 5. REGLAS FUNDACIONALES (APLICAN SIEMPRE)
 
 ### Para ambos proyectos:
+- **Regla de Lectura Autónoma:** No podés leer archivos nativamente. Usá `python .agents\scripts_lectura\lector_universal.py <ruta>` para leer imágenes, PDFs, DOCX, XLSX, videos. Nunca le digas al usuario "no puedo ver eso".
 - **Aislamiento de contexto:** Arquitectura NO habla de moda. Moda NO habla de arquitectura.
 - **Respuestas directas:** Sin vueltas, sin reformular lo que dijo el usuario, sin cortesías.
 - **Español rioplatense:** Vos, che, tono directo.
