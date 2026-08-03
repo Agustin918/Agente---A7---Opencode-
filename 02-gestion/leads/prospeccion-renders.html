@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prospección Renders 3D — A7 Arquitectura</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f4f5f7; color: #1a1a2e; padding: 32px 16px; }
+  .container { max-width: 960px; margin: 0 auto; }
+
+  header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; border-radius: 16px; padding: 40px 36px; margin-bottom: 32px; }
+  header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  header p { margin-top: 8px; color: #a8b2d1; font-size: 15px; }
+  .badge { display: inline-block; background: #e94560; color: #fff; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 20px; margin-top: 16px; letter-spacing: 0.5px; }
+
+  .tier { margin-bottom: 40px; }
+  .tier h2 { font-size: 18px; font-weight: 700; color: #16213e; margin-bottom: 4px; }
+  .tier .desc { color: #64748b; font-size: 14px; margin-bottom: 16px; }
+  .tier-1 { border-left: 4px solid #e94560; padding-left: 14px; }
+  .tier-2 { border-left: 4px solid #f39c12; padding-left: 14px; }
+  .tier-3 { border-left: 4px solid #2ecc71; padding-left: 14px; }
+
+  .card { background: #fff; border-radius: 12px; padding: 22px 24px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); border: 1px solid #e5e7eb; }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; }
+  .card h3 { font-size: 17px; font-weight: 700; color: #16213e; }
+  .card .zona { font-size: 13px; color: #64748b; margin-top: 2px; }
+  .card .perfil { font-size: 13.5px; color: #334155; margin-top: 10px; line-height: 1.5; }
+
+  .contactos { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; background: #eef2f7; border: 1px solid #dde3ec; border-radius: 8px; padding: 5px 10px; font-size: 12.5px; color: #1e293b; }
+  .chip .tag { font-weight: 600; color: #e94560; }
+
+  .canal { margin-top: 14px; font-size: 13px; }
+  .canal b { color: #16213e; }
+
+  .msg-box { margin-top: 14px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; }
+  .msg-box .msg-label { font-size: 11px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+  .msg-box .msg { font-size: 13.5px; line-height: 1.6; color: #1e293b; white-space: pre-wrap; }
+  .msg-actions { display: flex; gap: 8px; margin-top: 10px; align-items: center; }
+  .btn { border: none; cursor: pointer; font-size: 12.5px; font-weight: 600; padding: 7px 14px; border-radius: 8px; transition: all 0.15s; }
+  .btn-copy { background: #16213e; color: #fff; }
+  .btn-copy:hover { background: #1f2f55; }
+  .btn-copied { background: #2ecc71; color: #fff; }
+  .check { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; color: #64748b; cursor: pointer; user-select: none; }
+  .check input { width: 15px; height: 15px; accent-color: #2ecc71; }
+
+  .followup { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 12px; padding: 20px 24px; margin-top: 8px; }
+  .followup h2 { font-size: 16px; color: #9a3412; margin-bottom: 10px; }
+  .followup .msg { font-size: 13.5px; line-height: 1.6; color: #431407; white-space: pre-wrap; }
+
+  .notas { margin-top: 28px; background: #16213e; border-radius: 12px; padding: 22px 24px; color: #cbd5e1; }
+  .notas h2 { color: #fff; font-size: 15px; margin-bottom: 10px; }
+  .notas ul { margin-left: 18px; font-size: 13.5px; line-height: 1.8; }
+  .notas li b { color: #fbbf24; }
+
+  @media print { header { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Prospección Renders 3D</h1>
+    <p>14 estudios de arquitectura — Zona Norte &amp; CABA · Mensajes listos para enviar · Actualizado 22/07/2026</p>
+    <span class="badge">A7 ARQUITECTURA · SERVICIO DE RENDERS</span>
+  </header>
+
+  <!-- TIER 1 -->
+  <div class="tier tier-1">
+    <h2>🎯 Tier 1 — Mayor presupuesto</h2>
+    <div class="desc">Estudios que ya invierten en marketing y venden proyectos en pozo. Prioridad máxima.</div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>ARA Estudio</h3>
+          <div class="zona">CABA &amp; GBA · Tigre, Vicente López, San Isidro, Nordelta</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">Casas 150-300m², 10 años de trayectoria, marketing digital fuerte. Presentan proyectos con diagnóstico Zoom antes de construir.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">Email</span> hola@araestudio.com</span>
+        <span class="chip"><span class="tag">IG</span> @ara__studio</span>
+        <span class="chip"><span class="tag">IG</span> @neuroarq.manuberraz</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> LinkedIn (Manu Berraz) o email</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg1">Hola [Manu], vi que ARA acompaña desde el proyecto hasta la entrega de llaves en zona norte. Nosotros hacemos renders fotorrealistas y recorridos 3D en video para estudios — entregamos en 48-72hs. Los usan para presentar proyectos a clientes antes de construir y para vender casas en pozo. ¿Te interesa ver nuestro portfolio?</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg1', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>PADOVA Estudio</h3>
+          <div class="zona">CABA + Zona Norte (hasta Pilar)</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">Residencial + desarrolladores + documentación BIM. Ya usan renders propios — buen candidato para descongestionar entregas en demanda pico.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">Email</span> info@padovaestudio.com</span>
+        <span class="chip"><span class="tag">WhatsApp</span> 11 6151 1782</span>
+        <span class="chip"><span class="tag">IG</span> @padovaestudio</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> WhatsApp o LinkedIn</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg2">Hola [PADOVA], vi los renders de sus proyectos en la web. Trabajan con desarrolladores y sabemos que cada proyecto necesita varias vistas para presentar. Hacemos renders y recorridos 3D en 48-72hs para estudios con demanda pico de presentaciones. ¿Les sirve tener un socio para descongestionar entregas?</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg2', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>Bompadre Arquitectura</h3>
+          <div class="zona">Zona Norte · Puertos del Lago, San Isidro, Vicente López, San Martín</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">50+ proyectos completados, casas modernas. Volumen alto de obras terminadas y en curso.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">Web</span> bompadrearquitectura.com</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> LinkedIn o formulario web</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg3">Hola, los contacto de A7 Arquitectura. Con 50+ proyectos, saben que el render es lo que vende el proyecto antes de la primera palada. Ofrecemos renders fotorrealistas y recorridos 3D con entrega en 48-72hs, ideal para sus proyectos en etapa de venta o presentación. ¿Les comparto nuestro trabajo?</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg3', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIER 2 -->
+  <div class="tier tier-2">
+    <h2>📌 Tier 2 — Estudios medianos</h2>
+    <div class="desc">Buen balance esfuerzo/recompensa. Contacto directo por teléfono o WhatsApp.</div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>OAS Arquitectos</h3>
+          <div class="zona">Zona Norte</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">Viviendas residenciales contemporáneas, 10+ años de experiencia.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">Web</span> oasarquitectos.com</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> LinkedIn o formulario web</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg4">Hola, de A7 Arquitectura. Vi su trabajo en viviendas contemporáneas de zona norte. ¿Tienen renders propios o tercerizan? Nosotros hacemos renders fotorrealistas y recorridos 3D en 48-72hs. ¿Les mando ejemplos?</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg4', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>GEA Arquitectura</h3>
+          <div class="zona">Buenos Aires</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">Diseño y arquitectura. Tienen WhatsApp activo para consultas.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">WhatsApp</span> +54 9 11 3294-4582</span>
+        <span class="chip"><span class="tag">Web</span> geaestudio.com.ar</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> WhatsApp directo</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg5">Hola, los contacto del estudio A7 Arquitectura. Hacemos renders 3D fotorrealistas y recorridos virtuales para estudios de arquitectura, con entrega en 48-72hs. ¿Tienen algún proyecto que quieran presentar mejor? ¿Les comparto nuestro portfolio?</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg5', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>AVA Estudio</h3>
+          <div class="zona">Martínez</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">Estudio consolidado de Martínez con web propia.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">Web</span> avaestudio.com.ar</span>
+        <span class="chip"><span class="tag">Tel</span> (011) 4793-0957</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> Teléfono o Instagram</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg6">Hola, de A7 Arquitectura. Somos un estudio que ofrece renders 3D y recorridos virtuales para otros estudios de zona norte. Entregamos en 48-72hs y hacemos prueba gratis de una vista para que vean la calidad. ¿Les interesa?</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg6', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>Llacay Arquitectos</h3>
+          <div class="zona">Martínez</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">Estudio de Martínez con presencia en portales de arquitectura.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">Tel</span> (011) 4793-4044</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg7">Hola, de A7 Arquitectura. Ofrecemos servicio de renders 3D fotorrealistas y recorridos virtuales para estudios. Entregas en 48-72hs. ¿Tienen proyectos en curso que quieran presentar? ¿Les mando ejemplos de nuestro trabajo?</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg7', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>Conticello Arquitectos</h3>
+          <div class="zona">Vicente López</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">Estudio de Vicente López, Av. Miguel de Azcuénaga 102.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">Tel</span> (011) 4797-7939</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg8">Hola, de A7 Arquitectura. Hacemos renders 3D y recorridos virtuales para estudios de zona norte. Entrega en 48-72hs, prueba gratis de una vista. ¿Les interesa conocer nuestro trabajo?</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg8', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>Estudio Salaya - Blizniuk</h3>
+          <div class="zona">Acassuso</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">Estudio de Acassuso, Gral. Paunero 1289.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">Tel</span> (011) 4792-5223</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg9">Hola, de A7 Arquitectura. Ofrecemos servicio de renders 3D fotorrealistas y recorridos en video para estudios de arquitectura. ¿Les comparto nuestro portfolio? Entregamos en 48-72hs.</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg9', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>Barrionuevo Sierchuk Arquitectos</h3>
+          <div class="zona">San Isidro / Boulogne</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">Estudio de San Isidro, Francisco Berra 3015.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">Tel</span> (011) 4700-8862</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg10">Hola, de A7 Arquitectura. Somos un estudio que terceriza renders 3D y recorridos virtuales para arquitectos de zona norte. Entrega en 48-72hs. ¿Tienen algún proyecto para presentar? ¿Les mando ejemplos?</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg10', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIER 3 -->
+  <div class="tier tier-3">
+    <h2>⚡ Tier 3 — Conversión rápida</h2>
+    <div class="desc">Estudios chicos e independientes. Menos margen, pero volumen y respuesta rápida.</div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>CC Arquitectos</h3>
+          <div class="zona">Boulogne</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">Estudio de Boulogne, Virrey Vértiz 171.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">Tel</span> (011) 4765-7427</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg11">Hola, de A7 Arquitectura. Para arquitectos independientes, ofrecemos renders 3D por vista sin mínimo de proyecto. Ideal cuando necesitan presentar algo rápido y no tienen tiempo de renderizar. ¿Te interesa ver ejemplos?</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg11', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>Estudio Del Sur</h3>
+          <div class="zona">Florida · Vicente López</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">Av. Maipú 1329, Florida.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">Tel</span> (011) 4795-8865</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg12">Hola, de A7 Arquitectura. Hacemos renders 3D fotorrealistas y recorridos virtuales para estudios de zona norte. Entrega en 48-72hs con prueba gratis de una vista. ¿Les interesa?</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg12', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>Arq. Juan Benitez y Asoc.</h3>
+          <div class="zona">Beccar</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">Av. Centenario 2265, Beccar.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">Tel</span> (011) 4742-7995</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg13">Hola, de A7 Arquitectura. Ofrecemos renders 3D fotorrealistas por proyecto o por vista, con entrega en 48-72hs. ¿Tienen alguna obra o proyecto en curso que quieran presentar con renders? ¿Les comparto ejemplos?</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg13', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <h3>Estudio D'Adamo</h3>
+          <div class="zona">Boulogne</div>
+        </div>
+        <label class="check"><input type="checkbox"> Contactado</label>
+      </div>
+      <div class="perfil">Laprida 3206, Boulogne.</div>
+      <div class="contactos">
+        <span class="chip"><span class="tag">Tel</span> (011) 5197-6610</span>
+      </div>
+      <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
+      <div class="msg-box">
+        <div class="msg-label">Mensaje listo</div>
+        <div class="msg" id="msg14">Hola, de A7 Arquitectura. Somos un estudio que ofrece servicio de renders 3D y recorridos virtuales para arquitectos. Sin mínimo de proyecto, entrega en 48-72hs. ¿Les interesa ver nuestro trabajo?</div>
+        <div class="msg-actions">
+          <button class="btn btn-copy" onclick="copiar('msg14', this)">📋 Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOLLOW-UP -->
+  <div class="followup">
+    <h2>⏰ Follow-up — si no responden en 5 días</h2>
+    <div class="msg" id="msgFU">Hola [Nombre], te escribía de nuevo por lo de los renders — no sé si te llegó mi mensaje anterior. Te dejo 2 ejemplos de nuestro trabajo para que veas la calidad: [link]. Si ahora no es buen momento, lo dejamos para otra ocasión. ¡Gracias!</div>
+    <div class="msg-actions">
+      <button class="btn btn-copy" onclick="copiar('msgFU', this)">📋 Copiar follow-up</button>
+    </div>
+  </div>
+
+  <!-- NOTAS -->
+  <div class="notas">
+    <h2>📝 Notas estratégicas</h2>
+    <ul>
+      <li><b>Prioridad:</b> Tier 1 primero — tienen presupuesto para marketing y presentaciones</li>
+      <li><b>Estudios con BIM (ej. PADOVA):</b> destacar que el render se integra al flujo de proyecto</li>
+      <li><b>Regla:</b> cuando consigas los primeros 3 clientes, subí precios 20-30%</li>
+      <li><b>Oferta de entrada:</b> prueba gratis de una vista para ganar confianza</li>
+      <li><b>Seguimiento:</b> marcá "Contactado" en cada tarjeta y usá el follow-up a los 5 días</li>
+    </ul>
+  </div>
+
+</div>
+
+<script>
+function copiar(id, btn) {
+  const msg = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(msg).then(() => {
+    const original = btn.innerText;
+    btn.innerText = '✅ Copiado';
+    btn.classList.add('btn-copied');
+    setTimeout(() => { btn.innerText = original; btn.classList.remove('btn-copied'); }, 1500);
+  });
+}
+</script>
+</body>
+</html>
