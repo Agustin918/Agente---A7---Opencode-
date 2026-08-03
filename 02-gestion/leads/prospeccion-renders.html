@@ -28,8 +28,10 @@
   .card .perfil { font-size: 13.5px; color: #334155; margin-top: 10px; line-height: 1.5; }
 
   .contactos { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
-  .chip { display: inline-flex; align-items: center; gap: 6px; background: #eef2f7; border: 1px solid #dde3ec; border-radius: 8px; padding: 5px 10px; font-size: 12.5px; color: #1e293b; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; background: #eef2f7; border: 1px solid #dde3ec; border-radius: 8px; padding: 5px 10px; font-size: 12.5px; color: #1e293b; text-decoration: none; transition: all 0.15s; }
+  .chip:hover { background: #16213e; border-color: #16213e; color: #fff; transform: translateY(-1px); }
   .chip .tag { font-weight: 600; color: #e94560; }
+  .chip:hover .tag { color: #fbbf24; }
 
   .canal { margin-top: 14px; font-size: 13px; }
   .canal b { color: #16213e; }
@@ -81,9 +83,9 @@
       </div>
       <div class="perfil">Casas 150-300m², 10 años de trayectoria, marketing digital fuerte. Presentan proyectos con diagnóstico Zoom antes de construir.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">Email</span> hola@araestudio.com</span>
-        <span class="chip"><span class="tag">IG</span> @ara__studio</span>
-        <span class="chip"><span class="tag">IG</span> @neuroarq.manuberraz</span>
+        <a class="chip" href="mailto:hola@araestudio.com"><span class="tag">Email</span> hola@araestudio.com</a>
+        <a class="chip" href="https://instagram.com/ara__studio" target="_blank"><span class="tag">IG</span> @ara__studio</a>
+        <a class="chip" href="https://instagram.com/neuroarq.manuberraz" target="_blank"><span class="tag">IG</span> @neuroarq.manuberraz</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> LinkedIn (Manu Berraz) o email</div>
       <div class="msg-box">
@@ -105,9 +107,9 @@
       </div>
       <div class="perfil">Residencial + desarrolladores + documentación BIM. Ya usan renders propios — buen candidato para descongestionar entregas en demanda pico.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">Email</span> info@padovaestudio.com</span>
-        <span class="chip"><span class="tag">WhatsApp</span> 11 6151 1782</span>
-        <span class="chip"><span class="tag">IG</span> @padovaestudio</span>
+        <a class="chip" href="mailto:info@padovaestudio.com"><span class="tag">Email</span> info@padovaestudio.com</a>
+        <a class="chip" href="https://wa.me/541161511782" target="_blank"><span class="tag">WhatsApp</span> 11 6151 1782</a>
+        <a class="chip" href="https://instagram.com/padovaestudio" target="_blank"><span class="tag">IG</span> @padovaestudio</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> WhatsApp o LinkedIn</div>
       <div class="msg-box">
@@ -129,7 +131,7 @@
       </div>
       <div class="perfil">50+ proyectos completados, casas modernas. Volumen alto de obras terminadas y en curso.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">Web</span> bompadrearquitectura.com</span>
+        <a class="chip" href="https://bompadrearquitectura.com" target="_blank"><span class="tag">Web</span> bompadrearquitectura.com</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> LinkedIn o formulario web</div>
       <div class="msg-box">
@@ -157,7 +159,7 @@
       </div>
       <div class="perfil">Viviendas residenciales contemporáneas, 10+ años de experiencia.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">Web</span> oasarquitectos.com</span>
+        <a class="chip" href="https://oasarquitectos.com" target="_blank"><span class="tag">Web</span> oasarquitectos.com</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> LinkedIn o formulario web</div>
       <div class="msg-box">
@@ -179,8 +181,8 @@
       </div>
       <div class="perfil">Diseño y arquitectura. Tienen WhatsApp activo para consultas.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">WhatsApp</span> +54 9 11 3294-4582</span>
-        <span class="chip"><span class="tag">Web</span> geaestudio.com.ar</span>
+        <a class="chip" href="https://wa.me/5491132944582" target="_blank"><span class="tag">WhatsApp</span> +54 9 11 3294-4582</a>
+        <a class="chip" href="https://geaestudio.com.ar" target="_blank"><span class="tag">Web</span> geaestudio.com.ar</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> WhatsApp directo</div>
       <div class="msg-box">
@@ -202,8 +204,8 @@
       </div>
       <div class="perfil">Estudio consolidado de Martínez con web propia.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">Web</span> avaestudio.com.ar</span>
-        <span class="chip"><span class="tag">Tel</span> (011) 4793-0957</span>
+        <a class="chip" href="https://avaestudio.com.ar" target="_blank"><span class="tag">Web</span> avaestudio.com.ar</a>
+        <a class="chip" href="tel:+541147930957"><span class="tag">Tel</span> (011) 4793-0957</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> Teléfono o Instagram</div>
       <div class="msg-box">
@@ -225,7 +227,7 @@
       </div>
       <div class="perfil">Estudio de Martínez con presencia en portales de arquitectura.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">Tel</span> (011) 4793-4044</span>
+        <a class="chip" href="tel:+541147934044"><span class="tag">Tel</span> (011) 4793-4044</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
       <div class="msg-box">
@@ -247,7 +249,7 @@
       </div>
       <div class="perfil">Estudio de Vicente López, Av. Miguel de Azcuénaga 102.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">Tel</span> (011) 4797-7939</span>
+        <a class="chip" href="tel:+541147977939"><span class="tag">Tel</span> (011) 4797-7939</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
       <div class="msg-box">
@@ -269,7 +271,7 @@
       </div>
       <div class="perfil">Estudio de Acassuso, Gral. Paunero 1289.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">Tel</span> (011) 4792-5223</span>
+        <a class="chip" href="tel:+541147925223"><span class="tag">Tel</span> (011) 4792-5223</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
       <div class="msg-box">
@@ -291,7 +293,7 @@
       </div>
       <div class="perfil">Estudio de San Isidro, Francisco Berra 3015.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">Tel</span> (011) 4700-8862</span>
+        <a class="chip" href="tel:+541147008862"><span class="tag">Tel</span> (011) 4700-8862</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
       <div class="msg-box">
@@ -319,7 +321,7 @@
       </div>
       <div class="perfil">Estudio de Boulogne, Virrey Vértiz 171.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">Tel</span> (011) 4765-7427</span>
+        <a class="chip" href="tel:+541147657427"><span class="tag">Tel</span> (011) 4765-7427</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
       <div class="msg-box">
@@ -341,7 +343,7 @@
       </div>
       <div class="perfil">Av. Maipú 1329, Florida.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">Tel</span> (011) 4795-8865</span>
+        <a class="chip" href="tel:+541147958865"><span class="tag">Tel</span> (011) 4795-8865</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
       <div class="msg-box">
@@ -363,7 +365,7 @@
       </div>
       <div class="perfil">Av. Centenario 2265, Beccar.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">Tel</span> (011) 4742-7995</span>
+        <a class="chip" href="tel:+541147427995"><span class="tag">Tel</span> (011) 4742-7995</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
       <div class="msg-box">
@@ -385,7 +387,7 @@
       </div>
       <div class="perfil">Laprida 3206, Boulogne.</div>
       <div class="contactos">
-        <span class="chip"><span class="tag">Tel</span> (011) 5197-6610</span>
+        <a class="chip" href="tel:+541151976610"><span class="tag">Tel</span> (011) 5197-6610</a>
       </div>
       <div class="canal"><b>Canal sugerido:</b> Teléfono</div>
       <div class="msg-box">
